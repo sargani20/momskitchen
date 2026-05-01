@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MOM's Kitchen</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            width: 100%;
+            height: 4rem;
+            background-color: rgba(29, 27, 27, 0.808);
+            position: fixed;
+            top: -1px;
+        }
+        .nav ul{
+            list-style: none;
+            display: flex;
+            position: absolute;
+            left: 35%;
+            top: 13px;
+        }
+        .nav ul li a{
+            margin-left: 25px;
+            font-size: 23px;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            transition: 0.50s;
+            font-family: algerian;
+        }
+        .nav ul li a:hover{
+            color: rgb(251, 194, 86);
+        }
+        .nav #btn-table{
+            height: 45px;
+            border-radius: 40px;
+            position: absolute;
+            right: 3%;
+            top: 10px;
+            font-weight: 700;
+        }
+        .nav h4{
+            font-weight: 900;
+            color: rgb(241, 174, 49);
+            font-family: normal;
+            margin-top: 0.60%;
+            margin-left: 1%;
+            margin-top: 1%;
+        }
+        .nav h4 span{
+            color: white;
+        }
+        .nav #btn-table a{
+            color: orange;
+            text-decoration: none;
+        }
+        .nav #btn-table a:hover{
+            color: black;
+        }
+         img{
+            width: 100%;
+            height: 46.50rem;
+         }
+         .black-box{
+            width: 100%;
+            height: 46.50rem;
+            background-color: rgba(0, 0, 0, 0.666);
+            position: absolute;
+            top: -1px;
+         }
+         .black-box h1{
+            color: white;
+            margin-top: 10%;
+            margin-left: 20%;
+            font-size: 6rem;
+            font-weight: 1000;
+         }
+         span{
+            color: orange;
+         }
+         span1{
+            margin-left: 20%;
+         }
+        p{
+            color: white;
+            font-weight: 700;
+            font-size: 1.30rem;
+            margin-left: 10%;
+        }
+        span2{
+            margin-left: 35%;
+        }
+        #btn-table1{
+            margin-top: 2%;
+            margin-left: 48%;
+            font-weight: 800;
+            border-radius: 20px;
+            transition: 0.90s;
+        }
+        #btn-table1:hover{
+            background-color: rgba(0, 0, 0, 0);
+        }
+        .black-box a{
+            color: black;
+            text-decoration: none;
+            transition: 1s;
+        }
+       .black-box a:hover{
+            color: orange;
+        }
+        h6{
+            font-size: medium;
+            color: red;
+            font-weight: 800;
+            margin-top: 4%;
+            margin-left: 47%;
+        }
+        .middle h1{
+            font-weight: 1000;
+            margin-left: 37%;
+        }
+         .dishes{
+            display: flex;
+        }
+         .dish{
+            width: 300px;
+            height: 340px;
+            box-shadow: 0px 1px 2px 0px black;
+            margin-top: 2%;
+            margin-left: 4.30%;
+            border-radius: 1%;
+            line-height: 100%;
+            transition: 0.30s;
+        }
+        .dish:hover{
+            transform: translateY(-10px);
+            box-shadow: 0px 2px 4px 0px black;
+        }
+        .dish img {
+            width: 280px;
+            height: 200px;
+            border-radius: 2%;
+            margin-left: 3.30%;
+            margin-top: 3%;
+        }
+        .dish h5{
+            font-weight: 700;
+            margin-left: 30%;
+        }
+        .dish span{
+            color: black;
+            font-weight: 500;
+            margin-left: 9%;
+        }
+        .dish span1{
+            font-weight: 500;
+            margin-left: 25%;
+        }
+        #b1{
+            width: 120px;
+            height: 40px;
+            background-color: rgba(255, 182, 47, 0.786);
+            color: rgba(0, 0, 0, 0.819);
+            font-weight: 800;
+            border: 1px solid orange;
+            border-radius: 5px;
+            transition: 1s;
+            margin-top: 4%;
+            margin-left: 32%;
+        }
+        #b1:hover{
+            background-color: white;
+            color: orange;
+        }
+        .space{
+            width: 40rem;
+            height: 3rem;
+            margin-left: 33%;
+            margin-top: 10%;
+        }
+        #btn-table2{
+            box-shadow: 0px 1px 2px 0px black;
+            margin-top: -20%;
+            margin-left: 1%;
+            font-weight: 800;
+            border-radius: 20px;
+            transition: 0.90s;
+        }
+        #btn-table2:hover{
+            background-color: rgba(0, 0, 0, 0);
+            transform: scale(1.05);
+            box-shadow: 0px 2px 5px 0px black;
+        }
+        .space a{
+            color: black;
+            text-decoration: none;
+            transition: 1s;
+        }
+       .space a:hover{
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <img src="10.png">
+    <div class="black-box">
+        <h1>Serving the <span>taste</span> of <span1>Perfection</span1> </h1>
+        <p>Fresh ingredient that tells makes the heart. We also use fresh food, From localy sourced ingredient to expectly prepared meals,<br>
+        <span2>We create moments worth sharing.</span2></p>
+            <button class="btn btn-warning" id="btn-table1"><a href="MOMS_Ketchen_Order.html">ORDER NOW!</a></button>
+    </div>
+    <div class="nav">
+        <h4>🥣<span>MOM's</span> Kitchen </h4>
+        <ul>
+            <li><a href="MOMS_Ketchen.html">Home</a></li>
+            <li><a href="MOMS_Ketchen_About.html">About</a></li>
+            <li><a href="MOMS_Ketchen_manu.html">Dishes</a></li>
+            <li><a href="MOMS_Ketchen_Contect.html">Contact</a></li>
+        </ul>     
+            <button class="btn btn-outline-warning" id="btn-table"><a href="MOMS_Ketchen_Book_table.html">BOOK TABLE</a></button>
+    </div>
+    <div class="middle">
+        <h6>MOM's Kitchen</h6>
+        <h1>TODAY SPECIAL DISH</h1>
+        <div class="dishes">
+        <div class="dish">
+            <img src="10.png">
+            <h5>French Fries</h5>
+            <span>Lorem is ipsum dolor sited on the <span1>Reprehenderit quam.</span1></span>
+            <button id="b1">ORDER NOW!</button>
+        </div>
+        <div class="dish">
+            <img src="4.jfif">
+            <h5>Emos Somos</h5>
+            <span>Lorem is ipsum dolor sited on the <span1>Reprehenderit quam.</span1></span>
+            <button id="b1">ORDER NOW!</button>
+        </div>
+        <div class="dish">
+            <img src="5.jfif">
+            <h5>Tech Roll</h5>
+            <span>Lorem is ipsum dolor sited on the <span1>Reprehenderit quam.</span1></span>
+            <button id="b1">ORDER NOW!</button>
+        </div>
+        <div class="dish">
+            <img src="16.jpg">
+            <h5>Large Pizza</h5>
+            <span>Lorem is ipsum dolor sited on the <span1>Reprehenderit quam.</span1></span>
+            <button id="b1">ORDER NOW!</button>
+        </div>
+    </div>
+        <div class="dishes">
+        <div class="dish">
+            <img src="12.png">
+            <h5>Buly Ticka</h5>
+            <span>Lorem is ipsum dolor sited on the <span1>Reprehenderit quam.</span1></span>
+            <button id="b1">ORDER NOW!</button>
+        </div>
+        <div class="dish">
+            <img src="13.png">
+            <h5>Large Burger</h5>
+            <span>Lorem is ipsum dolor sited on the <span1>Reprehenderit quam.</span1></span>
+            <button id="b1">ORDER NOW!</button>
+        </div>
+        <div class="dish">
+            <img src="14.png">
+            <h5>Sort Chalk</h5>
+            <span>Lorem is ipsum dolor sited on the <span1>Reprehenderit quam.</span1></span>
+            <button id="b1">ORDER NOW!</button>
+        </div>
+        <div class="dish">
+            <img src="15.png">
+            <h5>Lemon Fries</h5>
+            <span>Lorem is ipsum dolor sited on the <span1>Reprehenderit quam.</span1></span>
+            <button id="b1">ORDER NOW!</button>
+        </div>
+    </div>
+    </div>
+    <div class="space">
+        <button class="btn btn-warning" id="btn-table2"><a href="MOMS_Ketchen_About.html">Our Restaurant</a></button>
+        <button class="btn btn-warning" id="btn-table2"><a href="MOMS_Ketchen_Order.html">View Menu📜</a></button>
+        <button class="btn btn-warning" id="btn-table2"><a href="MOMS_Ketchen_Contect.html">Feedback</a></button>
+        <button class="btn btn-warning" id="btn-table2"><a href="Mom's_Ketchen_next.html">Next-></a></button>
+    </div>
+</body>
+</html>

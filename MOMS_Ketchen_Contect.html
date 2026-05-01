@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <title>MOM's Kitchen</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            width: 100%;
+            height: 4rem;
+            background-color: rgba(29, 27, 27, 0.808);
+            position: fixed;
+            top: -1px;
+        }
+        .nav ul{
+            list-style: none;
+            display: flex;
+            position: absolute;
+            left: 35%;
+            top: 13px;
+        }
+        .nav ul li a{
+            margin-left: 25px;
+            font-size: 23px;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            transition: 0.50s;
+            font-family: algerian;
+        }
+        .nav ul li a:hover{
+            color: rgb(251, 194, 86);
+        }
+        .nav #btn-table{
+            height: 45px;
+            border-radius: 40px;
+            position: absolute;
+            right: 3%;
+            top: 10px;
+            font-weight: 700;
+        }
+        .nav #btn-table a{
+            color: orange;
+            text-decoration: none;
+        }
+        .nav #btn-table a:hover{
+            color: black;
+        }
+        .nav h4{
+            font-weight: 900;
+            color: rgb(241, 174, 49);
+            font-family: normal;
+            margin-top: 0.60%;
+            margin-left: 1%;
+            margin-top: 1%;
+        }
+        .nav h4 span{
+            color: white;
+        }
+        img{
+            width: 100%;
+            height: 18rem;
+        }
+        h1{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 45px;
+            font-weight: 800;
+            position: absolute;
+            top: 17%;
+            left: 40%;
+            color: aliceblue;
+        }
+        p{
+            font-weight: 700;
+            position: absolute;
+            top: 24%;
+            left: 37%;
+            color: aliceblue;
+        }
+        .black{
+            width: 100%;
+            height: 18rem;
+            background-color: rgba(0, 0, 0, 0.675);
+            position: absolute;
+        }
+        .contect{
+            margin-top: 3%;
+            width: 100%;
+            height: 25rem;
+            display: flex;
+        }
+        .feedback{
+            width: 60%;
+            color: orange;
+            height: 25rem;
+            border: 3px solid orange;
+            border-radius: 10px;
+            margin-left: 1%;
+            margin-right: 0.40%;
+        }
+        .feed{
+            width: 80%;
+            height: 4rem;
+            margin-top: 2%;
+            margin-left: 10%;
+            border-radius: 10px;
+            border: 2px solid orange;
+            font-weight: 800;
+            color: orange;
+            font-size: 20px;
+        }
+        .feed1{
+            width: 80%;
+            height: 4rem;
+            margin-top: 2%;
+            margin-left: 10%;
+            border-radius: 10px;
+            border: 2px solid orange;
+            background-color: rgb(255, 188, 62);
+            font-weight: 800;
+            color: rgb(255, 255, 255);
+            transition:1s ease-in-out;
+            font-size: 23px;
+            font-style: italic;
+        }
+        .feed1:hover{
+            color:rgb(255, 192, 74);
+            background-color: white;
+        }
+        .feedback h2{
+            font-weight: 1000;
+            margin-left: 40%;
+            color: orange;
+        }
+        .profile{
+            width: 60%;
+            height: 25rem;
+            background: url(555.png);
+            background-size: cover;
+            margin-left: 0.40%;
+            border-radius: 10px;
+        }
+        .profile h3{
+            color: orange;
+            font-weight: 700;
+            font-style: italic;
+            margin-top: 7%;
+            margin-left: 15%;
+        }
+        .profile h3 a{
+            color: orange;
+        }
+        .space{
+            width: 40rem;
+            height: 3rem;
+            margin-left: 33%;
+            margin-top: 10%;
+        }
+        #btn-table2{
+            box-shadow: 0px 1px 2px 0px black;
+            margin-top: -20%;
+            margin-left: 1%;
+            font-weight: 800;
+            border-radius: 20px;
+            transition: 0.90s;
+        }
+        #btn-table2:hover{
+            background-color: rgba(0, 0, 0, 0);
+            transform: scale(1.05);
+            box-shadow: 0px 2px 5px 0px black;
+        }
+         a{
+            color: black;
+            text-decoration: none;
+            transition: 1s;
+        }
+        a:hover{
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="black"></div>
+    <img src="444.png">   
+    <h1>Contect Us</h1>
+    <p>We would like to get a Feedback from you.</p>
+     <div class="nav">
+        <h4>🥣<span>MOM's</span> Kitchen </h4>
+        <ul>
+            <li><a href="MOMS_Ketchen.html">Home</a></li>
+            <li><a href="MOMS_Ketchen_About.html">About</a></li>
+            <li><a href="MOMS_Ketchen_manu.html">Dishes</a></li>
+            <li><a href="MOMS_Ketchen_Contect.html">Contact</a></li>
+        </ul>     
+            <button class="btn btn-outline-warning" id="btn-table"><a href="MOMS_Ketchen_Book_table.html">BOOK TABLE</a></button>
+    </div>
+    <div class="contect">
+         <div class="profile">
+            <h3><a href="#">✉mom'skitchen20@gmail.com</a></h3>
+            <h3>📞+92 3441810567</h3>
+            <h3>📞+92 202828095</h3>
+            <h3>📍Near by Badah Station</h3>
+        </div>
+        <div class="feedback">
+            <h2>Feedback</h2>
+            <input type="text" class="feed" placeholder="Your Name"><br>
+            <input type="Email" class="feed" placeholder="Your Email"><br>
+            <input type="textarea" class="feed" placeholder="Send Message"><br>
+            <button type="submit" class="feed1">Send Message</button>
+        </div>
+    </div>
+    <div class="space">
+        <button class="btn btn-warning" id="btn-table2"><a href="MOMS_Ketchen_About.html">Our Restaurant</a></button>
+        <button class="btn btn-warning" id="btn-table2"><a href="MOMS_Ketchen_Order.html">View Menu📜</a></button>
+        <button class="btn btn-warning" id="btn-table2"><a href="MOMS_Ketchen_Contect.html">Feedback</a></button>
+        <button class="btn btn-warning" id="btn-table2"><a href="Mom's_Ketchen_next.html">Next-></a></button>
+    </div>
+</body>
+</html>

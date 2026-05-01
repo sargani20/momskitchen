@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <title>MOM's Kitchen</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            width: 100%;
+            height: 4rem;
+            background-color: rgba(29, 27, 27, 0.808);
+            position: fixed;
+            top: -1px;
+        }
+        .nav ul{
+            list-style: none;
+            display: flex;
+            position: absolute;
+            left: 35%;
+            top: 13px;
+        }
+        .nav ul li a{
+            margin-left: 25px;
+            font-size: 23px;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            transition: 0.50s;
+            font-family: algerian;
+        }
+        .nav ul li a:hover{
+            color: rgb(251, 194, 86);
+        }
+        .nav #btn-table{
+            height: 45px;
+            border-radius: 40px;
+            position: absolute;
+            right: 3%;
+            top: 10px;
+            font-weight: 700;
+        }
+        .nav #btn-table a{
+            color: orange;
+            text-decoration: none;
+        }
+        .nav #btn-table a:hover{
+            color: black;
+        }
+        .nav h4{
+            font-weight: 900;
+            color: rgb(255, 166, 0);
+            font-family: normal;
+            margin-top: 0.60%;
+            margin-left: 1%;
+            margin-top: 1%;
+        }
+        .nav h4 span{
+            color: white;
+        }
+        img{
+            width: 100%;
+            height: 18rem;
+        }
+        h1{
+            font-size: 45px;
+            font-weight: 1000;
+            position: absolute;
+            top: 17%;
+            left: 40%;
+            color: aliceblue;
+        }
+        p{
+            font-weight: 700;
+            position: absolute;
+            top: 24%;
+            left: 36.30%;
+            color: aliceblue;
+        }
+        .black{
+            width: 100%;
+            height: 18rem;
+            background-color: rgba(0, 0, 0, 0.462);
+            position: absolute;
+        }
+        .story{
+            display: flex;
+            margin-top: 5%;
+            
+        }
+        .story .text{
+            width: 50%;
+            text-align:justify;
+        }
+        .story .text h2{
+            font-weight: 1000;
+            color: orange;
+            margin-left: 35%;
+            margin-top: -5%;
+        }
+        .story .text p{
+            font-weight: 700;
+            margin-left: 2%;
+            margin-top: 4%;
+            font-size: 17px;
+        }
+        .story .profile{
+            width: 45%;
+            margin-left: 3%;
+        }
+        .story .profile img{
+            width: 100%;
+            height: 500px;
+            margin-top: 5%;
+            border-radius: 1%;
+        }
+        .space{
+            width: 40rem;
+            height: 3rem;
+            margin-left: 33%;
+            margin-top: 10%;
+        }
+        #btn-table2{
+            box-shadow: 0px 1px 2px 0px black;
+            margin-top: -20%;
+            margin-left: 1%;
+            font-weight: 800;
+            border-radius: 20px;
+            transition: 0.90s;
+        }
+        #btn-table2:hover{
+            background-color: rgba(0, 0, 0, 0);
+            transform: scale(1.05);
+            box-shadow: 0px 2px 5px 0px black;
+        }
+         a{
+            color: black;
+            text-decoration: none;
+            transition: 1s;
+        }
+        a:hover{
+            color: orange;
+        }
+        .dishes{
+            display: flex;
+        }
+        .dish{
+            width: 300px;
+            height: 300px;
+            box-shadow: 0px 1px 2px 0px black;
+            margin-top: 2%;
+            margin-left: 4.30%;
+            border-radius: 1%;
+            line-height: 100%;
+            transition: 0.30s;
+        }
+        .dish:hover{
+            transform: translateY(-10px);
+            box-shadow: 0px 2px 4px 0px black;
+        }
+        .dish img {
+            width: 280px;
+            height: 200px;
+            border-radius: 2%;
+            margin-left: 3.30%;
+            margin-top: 3%;
+        }
+        .dish h5{
+            font-weight: 700;
+            margin-left: 33%;
+            color:rgb(205, 133, 0);
+            font-style: italic;
+        }
+        .dish span{
+            font-weight: 600;
+            margin-left: 9%;
+        }
+        .dish span1{
+            font-weight: 500;
+            margin-left: 25%;
+        }
+    </style>
+</head>
+<body>
+    <div class="black"></div>
+    <img src="111.png">
+    <h1>About us</h1>
+    <p>Our best shief and Their famus recipeies!</p>
+    <div class="nav">
+        <h4>🥣<span>MOM's</span> Kitchen </h4>
+        <ul>
+            <li><a href="MOMS_Ketchen.html">Home</a></li>
+            <li><a href="MOMS_Ketchen_About.html">About</a></li>
+            <li><a href="MOMS_Ketchen_manu.html">Dishes</a></li>
+            <li><a href="MOMS_Ketchen_Contect.html">Contact</a></li>
+        </ul>     
+            <button class="btn btn-outline-warning" id="btn-table"><a href="MOMS_Ketchen_Book_table.html">BOOK TABLE</a></button>
+    </div>
+    <div class="dishes">
+        <div class="dish">
+            <img src="Shef.png">
+            <h5>Hasnain Ali</h5>
+            <span>Lorem is ipsum dolor sited on the <span1>Reprehenderit quam.</span1></span>
+        </div>
+        <div class="dish">
+            <img src="Shef1.png">
+            <h5>Adnan Ali</h5>
+            <span>Lorem is ipsum dolor sited on the <span1>Reprehenderit quam.</span1></span>
+        </div>
+        <div class="dish">
+            <img src="Shef2.png">
+            <h5>Akash Ali</h5>
+            <span>Lorem is ipsum dolor sited on the <span1>Reprehenderit quam.</span1></span>
+        </div>
+        <div class="dish">
+            <img src="Shef.png">
+            <h5>Kamran Ali</h5>
+            <span>Lorem is ipsum dolor sited on the <span1>Reprehenderit quam.</span1></span>
+        </div>
+    </div>
+    <div class="dishes">
+        <div class="dish">
+            <img src="Shef1.png">
+            <h5>M.Baqir</h5>
+            <span>Lorem is ipsum dolor sited on the <span1>Reprehenderit quam.</span1></span>
+        </div>
+        <div class="dish">
+            <img src="Shef2.png">
+            <h5>Ghulam Abbas</h5>
+            <span>Lorem is ipsum dolor sited on the <span1>Reprehenderit quam.</span1></span>
+        </div>
+        <div class="dish">
+            <img src="Shef1.png">
+            <h5>Amir Ali</h5>
+            <span>Lorem is ipsum dolor sited on the <span1>Reprehenderit quam.</span1></span>
+        </div>
+        <div class="dish">
+            <img src="Shef2.png">
+            <h5>Imran Ali</h5>
+            <span>Lorem is ipsum dolor sited on the <span1>Reprehenderit quam.</span1></span>
+        </div>
+    </div>
+    <div class="space">
+        <button class="btn btn-warning" id="btn-table2"><a href="MOMS_Ketchen_About.html">Our Restaurant</a></button>
+        <button class="btn btn-warning" id="btn-table2"><a href="MOMS_Ketchen_Order.html">View Menu📜</a></button>
+        <button class="btn btn-warning" id="btn-table2"><a href="MOMS_Ketchen_Contect.html">Feedback</a></button>
+        <button class="btn btn-warning" id="btn-table2"><a href="Mom's_Ketchen_next.html">Next-></a></button>
+    </div>
+</body>
+</html>

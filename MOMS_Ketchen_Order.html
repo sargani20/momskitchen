@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <title>MOM's Kitchen</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            width: 100%;
+            height: 4rem;
+            background-color: rgba(29, 27, 27, 0.808);
+            position: fixed;
+            top: -1px;
+        }
+        .nav ul{
+            list-style: none;
+            display: flex;
+            position: absolute;
+            left: 35%;
+            top: 13px;
+        }
+        .nav ul li a{
+            margin-left: 25px;
+            font-size: 23px;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            transition: 0.50s;
+            font-family: algerian;
+        }
+        .nav ul li a:hover{
+            color: rgb(251, 194, 86);
+        }
+        .nav #btn-table{
+            height: 45px;
+            border-radius: 40px;
+            position: absolute;
+            right: 3%;
+            top: 10px;
+            font-weight: 700;
+        }
+        .nav #btn-table a{
+            color: orange;
+            text-decoration: none;
+        }
+        .nav #btn-table a:hover{
+            color: black;
+        }
+        .nav h4{
+            font-weight: 900;
+            font-size: 23px;
+            color: rgb(241, 174, 49);
+            font-family: normal;
+            margin-top: 0.60%;
+            margin-left: 1%;
+            margin-top: 1%;
+        }
+        .nav h4 span{
+            color: white;
+        }
+        #btn-table{
+            width: 7%;
+            background-color: rgba(255, 255, 255, 0);
+            border: 1px solid orange;
+            color: rgb(255, 180, 42);
+            font-size: 13px;
+            transition: 1s;
+            cursor: pointer;
+        }
+        #btn-table:hover{
+            background-color: orange;
+            color: black;
+        }
+        table{
+            width: 80%;
+            font-weight: 800;
+            font-size: 23px;
+            text-align: center;
+            color: orange;
+            font-style: italic;
+            margin:auto;
+            margin-top: 5%;
+        }
+        .item{
+            width: 30%;
+            text-align: left;
+        }
+        th{
+            color: rgb(255, 255, 255);
+            background-color: rgb(62, 62, 62);
+        }
+        .check{
+            width: 130px;
+        }
+        .num{
+            width: 20px;
+        }
+        .btn5{
+            width: 40%;
+            height: 60px;
+            background-color: orange;
+            border: 2px solid orange;
+            font-size: 30px;
+            font-weight: 900;
+            border-radius: 20px;
+            transition: 1s;
+            margin-top: 1%;
+            margin-left: 30%;
+        }
+        .btn5:hover{
+            background-color: aliceblue;
+            color: orange;
+        }
+        .space{
+            width: 40rem;
+            height: 8rem;
+            margin-left: 33%;
+            margin-top: 8%;
+        }
+        #btn-table2{
+            width: 15%;
+            height: 2.50rem;
+            color: black;
+            background-color: rgb(255, 190, 69);
+            border:1px solid orange;
+            box-shadow: 0px 1px 2px 0px black;
+            margin-top: -20%;
+            margin-left: 1%;
+            font-size: 15px;
+            font-weight: 800;
+            border-radius: 20px;
+            transition: 0.90s;
+        }
+        #btn-table2:hover{
+            background-color: rgba(0, 0, 0, 0);
+            transform: scale(1.05);
+            box-shadow: 0px 2px 5px 0px black;
+        }
+        #btn-table4{
+            width: 22%;
+            height: 2.50rem;
+            color: black;
+            background-color: rgb(255, 190, 69);
+            border:1px solid orange;
+            box-shadow: 0px 1px 2px 0px black;
+            margin-top: -20%;
+            margin-left: 1%;
+            font-size: 15px;
+            font-weight: 800;
+            border-radius: 20px;
+            transition: 0.90s;
+        }
+        #btn-table4:hover{
+            background-color: rgba(0, 0, 0, 0);
+        }
+        #btn-table3{
+            width: 20%;
+            height: 2.50rem;
+            color: black;
+            font-size: 15px;
+            background-color: rgb(255, 190, 69);
+            border:1px solid orange;
+            box-shadow: 0px 1px 2px 0px black;
+            margin-top: -20%;
+            margin-left: 1%;
+            font-weight: 800;
+            border-radius: 20px;
+            transition: 0.90s;
+        }
+        #btn-table3:hover{
+            background-color: rgba(0, 0, 0, 0);
+        }
+         a{
+            color: black;
+            text-decoration: none;
+            transition: 1s;
+        }
+        a:hover{
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+     <div class="nav">
+        <h4>🥣<span>MOM's</span> Kitchen </h4>
+        <ul>
+            <li><a href="MOMS_Ketchen.html">Home</a></li>
+            <li><a href="MOMS_Ketchen_About.html">About</a></li>
+            <li><a href="MOMS_Ketchen_manu.html">Dishes</a></li>
+            <li><a href="MOMS_Ketchen_Contect.html">Contact</a></li>
+        </ul>     
+            <button class="btn btn-outline-warning" id="btn-table"><a href="MOMS_Ketchen_Book_table.html">BOOK TABLE</a></button>
+    </div>
+    <form>
+    <table border="2">
+        <tr>
+            <th>Sr.No</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Quantaties</th>
+            <th>Select Item</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td class="item">Chicken</td>
+            <td>$350</td>
+            <td class="num"><input type="number"></td>
+            <td class="check"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td class="item">Remon Rows</td>
+            <td>$250</td>
+            <td class="num"><input type="number"></td>
+            <td class="check"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td class="item">Chicken Pice</td>
+            <td>$450</td>
+            <td class="num"><input type="number"></td>
+            <td class="check"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td class="item">Medium Burger</td>
+            <td>$150</td>
+            <td class="num"><input type="number"></td>
+            <td class="check"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td class="item">Lemon Fries</td>
+            <td>$350</td>
+            <td class="num"><input type="number"></td>
+            <td class="check"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td class="item">Sort Chalk</td>
+            <td>$500</td>
+            <td class="num"><input type="number"></td>
+            <td class="check"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td class="item">Large Burger</td>
+            <td>$350</td>
+            <td class="num"><input type="number"></td>
+            <td class="check"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td class="item">Buly Ticka</td>
+            <td>$300</td>
+            <td class="num"><input type="number"></td>
+            <td class="check"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td class="item">Chicken Stew</td>
+            <td>$400</td>
+            <td class="num"><input type="number"></td>
+            <td class="check"><input type="checkbox"></td>
+        </tr>
+         <tr>
+            <td>10</td>
+            <td class="item">Chicken</td>
+            <td>$350</td>
+            <td class="num"><input type="number"></td>
+            <td class="check"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td class="item">Remon Rows</td>
+            <td>$250</td>
+            <td class="num"><input type="number"></td>
+            <td class="check"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td class="item">Chicken Pice</td>
+            <td>$450</td>
+            <td class="num"><input type="number"></td>
+            <td class="check"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td class="item">Medium Burger</td>
+            <td>$150</td>
+            <td class="num"><input type="number"></td>
+            <td class="check"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td class="item">Lemon Fries</td>
+            <td>$350</td>
+            <td class="num"><input type="number"></td>
+            <td class="check"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td class="item">Sort Chalk</td>
+            <td>$500</td>
+            <td class="num"><input type="number"></td>
+            <td class="check"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td class="item">Large Burger</td>
+            <td>$350</td>
+            <td class="num"><input type="number"></td>
+            <td class="check"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td class="item">Buly Ticka</td>
+            <td>$300</td>
+            <td class="num"><input type="number"></td>
+            <td class="check"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td class="item">Chicken Stew</td>
+            <td>$400</td>
+            <td class="num"><input type="number"></td>
+            <td class="check"><input type="checkbox"></td>
+        </tr>
+    </table>
+    <button class="btn5" type="reset">ORDER NOW!</button>
+</form>
+<div class="space">
+        <button class="btn btn-warning" id="btn-table4"><a href="MOMS_Ketchen_About.html">Our Restaurant</a></button>
+        <button class="btn btn-warning" id="btn-table3"><a href="MOMS_Ketchen_Order.html">View Menu📜</a></button>
+        <button class="btn btn-warning" id="btn-table2"><a href="MOMS_Ketchen_Contect.html">Feedback</a></button>
+        <button class="btn btn-warning" id="btn-table2"><a href="Mom's_Ketchen_next.html">Next-></a></button>
+    </div>
+</body>
+</html>
